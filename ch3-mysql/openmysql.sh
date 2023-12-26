@@ -14,8 +14,8 @@ kubectl run -it --v=0 --rm --restart=Never --overrides='
             "name": "DB_PASSWORD",
             "valueFrom": {
               "secretKeyRef": {
-                "name": "db-secret",
-                "key": "DB_PASSWORD"
+                "name": "mysql-root-password",
+                "key": "password"
               }
             }
           }
